@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.controls label {
+    margin-bottom: 10px;
+    color: #333;
+
+}
+
+.char-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-bottom: 30px;
+
+}
+
+.char {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    margin: 2px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.char:hover {
+    background-color: #2980b9;
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: #f1c40f;
+}
+
+.sorted {
+    background-color: #2ecc71;
+}
+
+table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+#swap-table {
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#swap-table th {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+}
+
+#generate-btn,
+#sort-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn {
+    background-color: grey;
+}
+
+#sort-btn {
+    background-color: orange;
+}
+
+#generate-btn:hover,
+#sort-btn:hover {
+    background-color: #2980b9;
+}

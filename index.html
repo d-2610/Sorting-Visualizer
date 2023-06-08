@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div class="controls">
+            <label for="algorithm-select">Sorting Algorithm:</label>
+            <select id="algorithm-select">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+
+            <label for="char-input">Characters:</label>
+            <input type="text" id="char-input" placeholder="Enter characters">
+            <br>
+            <button id="generate-btn">Generate</button>
+            <br>
+            <button id="sort-btn">Sort</button>
+            <br>
+            <label for="speed-input">Sorting Speed:</label>
+            <input type="range" id="speed-input" min="1" max="1000" value="500">
+            <br>
+            <div class="char-container" id="char-container"></div>
+
+            <table id="swap-table">
+                <thead>
+                    <tr>
+                        <th>Swap</th>
+                        <th>Index 1</th>
+                        <th>Index 2</th>
+                        <th>Character 1</th>
+                        <th>Character 2</th>
+                    </tr>
+                </thead>
+                <tbody id="swap-table-body"></tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
